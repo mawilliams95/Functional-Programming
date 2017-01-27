@@ -1,10 +1,14 @@
 (define (reverse-general L)
   (cond((null? L) '())
        ((list? L)
-        `(append (deep-reverse (cdr L))
-                (list (deep-reverse (car L)))
+        `(append (reverse-general (cdr L))
+                (list (reverse-general (car L)))
          )
        )
        (else L)
   )
+)
+
+(define (sum-up-numbers-simple L)
+  
 )
