@@ -10,8 +10,9 @@
 )
 
 (define (sum-up-numbers-simple L)
-  ((null? L)
-   ((list? L)
+  ((list? L)
+   (
+    
    )
   )
 )
