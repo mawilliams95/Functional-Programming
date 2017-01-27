@@ -11,8 +11,7 @@
 
 (define (sum-up-numbers-simple L)
   ((list? L)
-   (
-    
+   ((+ L)    
    )
   )
 )
