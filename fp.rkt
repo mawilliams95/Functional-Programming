@@ -10,7 +10,7 @@
 )
 
 (define (sum-up-numbers-simple L)
-  ((list? L)
+  (cond((list? L)0)
    ((+ L)    
    )
   )
