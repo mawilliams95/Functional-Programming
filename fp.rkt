@@ -1,5 +1,10 @@
 (define (reverse-general L)
-  (
-   
+  (cond((null? L) '())
+       ((list? L)
+        `(append (deep-reverse (cdr L))
+                (list (deep-reverse (car L)))
+         )
+       )
+       (else L)
   )
 )
